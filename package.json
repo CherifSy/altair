@@ -31,7 +31,9 @@
     "make": "electron-forge make",
     "dist-electron": "build",
     "postinstall": "opencollective postinstall",
-    "publish-packages": "npm run build && lerna publish --skip-git --force-publish --yes"
+    "publish-packages": "npm run build && lerna publish --skip-git --force-publish --yes",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": ">= 6.9.1"
@@ -95,7 +97,8 @@
     "to-snake-case": "^1.0.0",
     "uuid": "^3.1.0",
     "valid-url": "^1.0.9",
-    "zone.js": "^0.8.20"
+    "zone.js": "^0.8.20",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "@types/electron": "^1.4.38",
@@ -139,5 +142,6 @@
     "type": "opencollective",
     "url": "https://opencollective.com/altair",
     "logo": "https://opencollective.com/altair/logo.txt"
-  }
+  },
+  "snyk": true
 }
