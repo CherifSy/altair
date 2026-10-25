@@ -41,7 +41,7 @@
     "@angular/animations": "^5.2.0",
     "@angular/cdk": "5.2.5",
     "@angular/cli": "^1.6.3",
-    "@angular/common": "^5.2.0",
+    "@angular/common": "^20.3.34",
     "@angular/compiler": "^5.2.0",
     "@angular/compiler-cli": "^5.2.0",
     "@angular/core": "^5.2.0",
